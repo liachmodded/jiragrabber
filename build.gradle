@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.github.liachmodded'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+        url = "https://m2proxy.atlassian.com/repository/public"
+    }
+}
+
+dependencies {
+    compile "com.atlassian.jira:jira-rest-java-client-app:5.1.6"
+}
